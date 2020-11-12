@@ -24,7 +24,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-image: url("./images/tulip1.jpeg");
-    transition: background-image 2s;
+    transition: background-image 1s;
     width:500px;
     height:500px;
 }
