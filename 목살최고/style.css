@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#divList{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div{
+    border:solid 2px black;
+    width: 155px;
+    height: 155px;
+    margin:20px;
+}
+#lion{
+    display:block;
+}
+#imageSlider{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./images/tulip1.jpeg");
+    transition: background-image 1s;
+    width:500px;
+    height:500px;
+}
+#pre,#next{
+    width:30px;
+    height: 30px;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+    border: none;
+}
+
+button:focus{
+    outline:0;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@300&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(117, 184, 247, 0.911);
+}
+.calender{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    top: 25px;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 50px;
+
+}
+.clock{
+    width:400px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./clock.png);
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: 0 -15px 15px rgba(0,0,0,0.2),
+                inset 0 -15px 15px rgba(0,0,0,0.2),
+                0 15px 15px rgba(255,255,255,0.3),
+                inset 0 15px 15px rgba(255,255,255,0.3);
+}
+.clock:before{
+    content: "";
+    position: absolute;
+    width:15px;
+    height: 15px;
+    background-color: rgb(250, 79, 79);
+    border-radius: 50%;
+    z-index: 100;
+}
+.clock .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+.clock .hour,.hr{
+    width:160px;
+    height: 160px;
+}
+.clock .min,.mn{
+    width:190px;
+    height: 190px;
+}
+.clock .sec,.sc{
+    width:230px;
+    height: 230px;
+}
+.hr,.mn,.sc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 8px;
+    height: 80px;
+    background-color: rgb(41, 41, 41);
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+
+}
+.mn:before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 4px;
+    height: 110px;
+    background-color: rgb(34, 34, 34);
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+
+}
+.sc:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 140px;
+    background-color: rgb(245, 58, 58);
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+
+}

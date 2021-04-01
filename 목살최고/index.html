@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>moksal is best</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="imageSlider">
+            <button id="pre" onclick="pre()"><img src="./images/left.png"/></button>
+            <button id="next" onclick="next()"><img src="./images/right.png"/></button>
+        </div>
+        <div id="divList">
+            <div class="div" 
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"></div>
+            <div class="div" 
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"></div>
+            <div class="div" 
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"></div>
+            <div class="div" 
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"></div>
+            <div class="div" 
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"></div>
+        </div>
+        <img 
+            id="lion" 
+            src="./images/lion.gif" 
+            draggable="true"
+            ondragstart="drag(event)"
+            width="150px"/>
+        <script src="script.js"></script>
+    </body>
+</html>

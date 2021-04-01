@@ -1,0 +1,29 @@
+.panel1{
+    background-image: url("./images/tulip1.jpeg");
+}
+.panel1{
+    background-image: url("./images/tulip2.jpeg");
+}
+.panel1{
+    background-image: url("./images/tulip3.jpeg");
+}
+.panel1{
+    background-image: url("./images/tulip4.jpeg");
+}
+.panel1{
+    background-image: url("./images/tulip5.jpeg");
+}
+.flex-panel{
+    display:flex;
+    flex-direction: row;
+    min-height:100vh;
+}
+.panel{
+    color:white;
+    text-align: center;                              
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size:cover;
+    flex:1 0 auto;
+}

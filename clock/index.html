@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clock</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="calender">
+            <div>Today is</div>&nbsp;
+            <div class="year"></div>.
+            <div class="month"></div>.
+            <div class="date"></div>
+        </div>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            setInterval(()=>{
+                const deg=6;
+                const hr=document.querySelector('#hr');
+                const mn=document.querySelector('#mn');
+                const sc=document.querySelector('#sc');
+
+                const date=document.querySelector('.date');
+                const month=document.querySelector('.month');
+                const year=document.querySelector('.year');
+
+
+                let day=new Date();
+                let hh=day.getHours()*30;
+                let mm=day.getMinutes()*deg;
+                let ss=day.getSeconds()*deg;
+
+                hr.style.transform=`rotateZ(${(hh)+(mm/12)}deg)`;
+                mn.style.transform=`rotateZ(${mm}deg)`;
+                sc.style.transform=`rotateZ(${ss}deg)`;
+
+                let d=day.getDate();
+                let m=day.getMonth()+1;
+                let y=day.getFullYear();
+
+                date.innerText=d;
+                month.innerText=m;
+                year.innerText=y;
+
+            })
+            
+        </script>
+    </body>
+</html>
